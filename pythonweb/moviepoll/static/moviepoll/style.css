@@ -1,0 +1,27 @@
+li a {
+    color: white;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 forestgreen,
+    1px -1px 0 forestgreen,
+    -1px 1px 0 forestgreen,
+    1px 1px 0 forestgreen;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+body {
+    background-image:url("images/ben1.jpg");
+    background-size:100%;
+}
+
+h5 {
+    color: white;
+    text-shadow:
+    -1px -1px 0 forestgreen,
+    1px -1px 0 forestgreen,
+    -1px 1px 0 forestgreen,
+    1px 1px 0 forestgreen;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 40x;
+}

@@ -1,0 +1,68 @@
+li a {
+    color: brown;
+}
+.header {
+    height: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+
+body {
+    background-image:url("images/ben2.jpg");
+    background-size:100% 100%;
+}
+
+h6 {
+    text-align: left;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    font-size: 30px;
+}
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+
+h1 {
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+
+}
+
+
+h2 {
+    text-align: center;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 60px;
+    
+      }
+
+.transparent{
+        background:rgba(255,255,255,0.8);
+}
+
+
+
+h4 {
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+  font-size: 40px;
+
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }

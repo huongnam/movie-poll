@@ -1,0 +1,57 @@
+li a {
+    color: brown;
+}
+.header {
+    height: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+
+body {
+    background-image:url("images/ben3.jpg");
+    background-size:100% 100%;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+h6 {
+    text-align: left;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    font-size: 30px;
+
+}
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: left;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    font-size: 30px;
+
+}
+
+
+
+.transparent{
+        background:rgba(255,255,255,0.8);
+}
+
+
+

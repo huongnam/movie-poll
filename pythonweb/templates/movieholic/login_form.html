@@ -1,0 +1,16 @@
+
+{% load crispy_forms_tags %}
+
+
+
+    <form role="form"
+        action="{% url 'movieholic_login' %}"
+        method="post">
+        <p>Please prove that you are an Inteker.</p>
+        {{ form | crispy}}
+        {% csrf_token %} 
+        <button type="submit" class="btn btn-success">Sign in</button>
+        
+        
+    </form>
+    

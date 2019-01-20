@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'movieholic/home.css' %}">
+
+
+
+    <h1>Hi {{ user.username }}, these are the polls we have so far:</h1><br>
+    <div class="transparent">
+    {% for question in all_question%}
+    <b><big><a href="{% url 'moviepoll:detail' question.id %}">{{ question.question_text }}</big></b></a><br>
+    {% endfor %}
+    </div>
+    
+    <h1>It's your turn to vote!</h1>
+{% if user.is_authenticated %}
+    <h6><div class="topright"><a href="{% url 'movieholic_logout' %}">Logout</a></div></h6>
+{% else %}
+    <h6><div class="topright"><a href="{% url 'movieholic_login' %}">Login</a></div></h6>
+{% endif %}

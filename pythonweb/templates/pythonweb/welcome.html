@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'pythonweb/style.css' %}">       
+
+
+<div class="header">
+  <h1>The Intek Movie Friday Night Poll</h1>
+  
+
+</div>
+{% if user.is_authenticated %}
+    <h6><div class="topright"><a href="{% url 'movieholic_logout' %}">Logout</a></div></h6>
+{% else %}
+    <h6><div class="topright"><a href="{% url 'movieholic_login' %}">Login</a></div></h6>
+{% endif %}
+    
+<br><br><br><br><br><br><br>
+
+
+<div class="transparent">
+
+
+            <h2>Welcome movieholics in Intek!</h2>
+            <h4>Pick the movie you wish to see.</h4>
+</div>

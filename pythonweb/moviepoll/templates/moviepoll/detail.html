@@ -1,0 +1,29 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'moviepoll/detail.css' %}">
+
+<h2>{{ question.question_text }}</h2>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'moviepoll:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <div class="clearfix">
+    {% if choice.choice_img %}
+        <img class="img" src="{{ choice.choice_img.url }}" width="450" height="600"><br>
+    {% endif %}    
+    <h1><big><b>{{ choice.choice_text }}</big></b></h1>
+    <h3><big><b>Genre:</b></big> <i>{{ choice.choice_genre }}</i></h3>
+    <h3><big><b>IMDb:</b></big> {{ choice.choice_imdb }}</h3><br><br>
+    <h4>{{ choice.choice_description }}</h4>
+   
+    </div>
+
+   
+
+{% endfor %}
+<input type="submit" value="Vote">
+</form>

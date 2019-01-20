@@ -1,0 +1,5 @@
+#!d:\intek\projects\basic_web_server\vnam\env\scripts\python.exe
+from django.core import management
+
+if __name__ == "__main__":
+    management.execute_from_command_line()
